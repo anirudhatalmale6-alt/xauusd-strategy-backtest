@@ -1,0 +1,3 @@
+trend_mode,completed,expired,completion_rate_pct,bars_median,bars_mean,bars_p90,bars_max
+ema50,523,814,39.12,4.0,5.21,10.0,12.0
+ema50_200,328,543,37.66,4.0,5.19,10.0,12.0

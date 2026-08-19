@@ -116,7 +116,7 @@ def simulate(signals: pd.DataFrame, m15: pd.DataFrame, m1: pd.DataFrame,
         equity += pnl
         open_until = exit_ts
 
-        rows.append({
+        row = {
             "signal_ts": s.signal_ts, "entry_ts": t_entry, "exit_ts": exit_ts,
             "direction": "BUY" if s.direction > 0 else "SELL",
             "session": s.session, "setup": s.setup, "zone_id": s.zone_id,
@@ -126,7 +126,15 @@ def simulate(signals: pd.DataFrame, m15: pd.DataFrame, m1: pd.DataFrame,
             "pnl": round(pnl, 2), "r": round(pnl / risk_cash, 3) if risk_cash else 0.0,
             "equity": round(equity, 2),
             "bars_held": int(m15_idx.get_loc(exit_ts) - pos) if exit_ts in m15.index else np.nan,
-        })
+        }
+        # carry the setup's own detail into the trade log so a trade can be
+        # reviewed later without joining back to the signals file
+        for f in ("structural_stop", "atr_buffer", "stop_distance", "atr15", "spread",
+                  "zone_lo", "zone_hi", "zone_touches", "regime", "bars_to_retest",
+                  "body_pct", "upper_wick_pct", "lower_wick_pct", "close_pos", "range"):
+            if hasattr(s, f):
+                row[f] = getattr(s, f)
+        rows.append(row)
 
     out = pd.DataFrame(rows)
     out.attrs["skipped_overlapping"] = skipped

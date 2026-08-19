@@ -1,0 +1,10 @@
+{
+  "in_sample_start": "2015-01-01",
+  "in_sample_end": "2024-12-31",
+  "sealed_period": "2025-01-01 .. 2026-08-19 - NOT run by this script",
+  "reference_config": {
+    "r_target": 2.0,
+    "risk_pct": 0.25
+  },
+  "note": "no parameter search was performed; all thresholds are the ones written in the brief. The only variations are the two A/B comparisons requested."
+}

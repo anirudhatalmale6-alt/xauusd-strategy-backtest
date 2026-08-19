@@ -34,7 +34,7 @@ OUT = ROOT / "data" / "m1_freeserv"
 URL = "https://freeserv.dukascopy.com/2.0/index.php"
 REFERER = "https://freeserv.dukascopy.com/2.0/?path=chart/index&instrument=XAU/USD"
 
-START = dt.datetime(2021, 8, 1, tzinfo=dt.UTC)
+START = dt.datetime(2015, 1, 1, tzinfo=dt.UTC)
 END = dt.datetime(2026, 8, 19, 23, 59, tzinfo=dt.UTC)
 
 session = requests.Session()
