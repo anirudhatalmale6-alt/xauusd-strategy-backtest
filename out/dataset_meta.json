@@ -1,0 +1,12 @@
+{
+  "source": "Dukascopy Bank SA - aggregated M1 chart feed, bid and ask sides pulled separately",
+  "validation": "cross-checked against 242,288 minutes rebuilt from the raw tick archive; median difference 0.0000 on all 8 OHLC columns",
+  "instrument": "XAU/USD",
+  "m1_bars": 1790797,
+  "first_bar_utc": "2021-08-01 22:00:00+00:00",
+  "last_bar_utc": "2026-08-19 11:26:00+00:00",
+  "trading_days": 1572,
+  "median_spread_usd": 0.39,
+  "p99_spread_usd": 1.1,
+  "intraweek_gaps_over_2h": 19
+}

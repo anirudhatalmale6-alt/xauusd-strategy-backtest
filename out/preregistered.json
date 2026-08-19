@@ -1,0 +1,60 @@
+{
+  "001A": {
+    "picked_on": "in-sample expectancy (R)",
+    "r_target": 2.0,
+    "risk_pct": 0.25,
+    "in_sample": {
+      "trades": "145",
+      "win_rate_pct": 33.1,
+      "profit_factor": 0.964,
+      "expectancy_R": -0.0217,
+      "exp_R_ci_low": -0.2399,
+      "exp_R_ci_high": 0.207,
+      "prob_no_edge": 0.5918,
+      "net_return_pct": -0.87,
+      "max_drawdown_pct": -5.97,
+      "worst_losing_streak": "9"
+    },
+    "out_of_sample": {
+      "trades": "48",
+      "win_rate_pct": 29.17,
+      "profit_factor": 0.82,
+      "expectancy_R": -0.1269,
+      "exp_R_ci_low": -0.5022,
+      "exp_R_ci_high": 0.2486,
+      "prob_no_edge": 0.784,
+      "net_return_pct": -1.54,
+      "max_drawdown_pct": -3.23,
+      "worst_losing_streak": "8"
+    }
+  },
+  "001B": {
+    "picked_on": "in-sample expectancy (R)",
+    "r_target": 2.0,
+    "risk_pct": 0.25,
+    "in_sample": {
+      "trades": "97",
+      "win_rate_pct": 37.11,
+      "profit_factor": 1.146,
+      "expectancy_R": 0.0951,
+      "exp_R_ci_low": -0.1989,
+      "exp_R_ci_high": 0.3889,
+      "prob_no_edge": 0.2515,
+      "net_return_pct": 2.27,
+      "max_drawdown_pct": -4.0,
+      "worst_losing_streak": "7"
+    },
+    "out_of_sample": {
+      "trades": "29",
+      "win_rate_pct": 48.28,
+      "profit_factor": 1.848,
+      "expectancy_R": 0.4471,
+      "exp_R_ci_low": -0.0706,
+      "exp_R_ci_high": 0.9649,
+      "prob_no_edge": 0.0439,
+      "net_return_pct": 3.27,
+      "max_drawdown_pct": -1.25,
+      "worst_losing_streak": "5"
+    }
+  }
+}

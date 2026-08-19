@@ -1,0 +1,4 @@
+session,trades,win_rate_pct,expectancy_R,net_pnl,profit_factor
+london,9,33.33,-0.0024,-0.6,0.996
+newyork,14,35.71,0.0701,23.92,1.106
+overlap,25,24.0,-0.2821,-177.34,0.63
