@@ -34,6 +34,10 @@ class Config:
     risk_pct: float
     start_equity: float = 10_000.0
     slippage: float = SLIPPAGE
+    # Research 002 additions. Both default to the 001 behaviour so the frozen
+    # 001A run still reproduces bar for bar.
+    max_hold_bars: int = MAX_HOLD_BARS
+    exit_mode: str = "r_target"   # "level" = the signal carries its own target
 
 
 def _walk(m1: pd.DataFrame, direction: int, entry: float, stop: float, target: float,
@@ -95,14 +99,22 @@ def simulate(signals: pd.DataFrame, m15: pd.DataFrame, m1: pd.DataFrame,
         risk_per_oz = abs(entry - stop)
         if risk_per_oz <= 0:
             continue
-        target = entry + s.direction * cfg.r_multiple * risk_per_oz
+        if cfg.exit_mode == "level":
+            # Mean reversion exits at a price the market defines (the band
+            # midpoint), not at a multiple of the stop. Forcing an R target on
+            # it would handicap the family rather than test it.
+            target = float(getattr(s, "target", float("nan")))
+            if not np.isfinite(target) or (target - entry) * s.direction <= 0:
+                continue
+        else:
+            target = entry + s.direction * cfg.r_multiple * risk_per_oz
 
         # position size straight from the risk budget
         risk_cash = equity * cfg.risk_pct / 100.0
         size = risk_cash / risk_per_oz
 
         pos = m15_idx.get_loc(t_entry)
-        t_limit = m15_idx[min(pos + MAX_HOLD_BARS, len(m15_idx) - 1)]
+        t_limit = m15_idx[min(pos + cfg.max_hold_bars, len(m15_idx) - 1)]
         res = _walk(m1, s.direction, entry, stop, target, t_entry, t_limit, cfg.slippage)
 
         if res is None:
@@ -134,6 +146,12 @@ def simulate(signals: pd.DataFrame, m15: pd.DataFrame, m1: pd.DataFrame,
                   "body_pct", "upper_wick_pct", "lower_wick_pct", "close_pos", "range"):
             if hasattr(s, f):
                 row[f] = getattr(s, f)
+        # Research 002 families invent their own descriptive columns (level_kind,
+        # trendiness, adx, band width and so on). Carry anything else through
+        # rather than making every new family edit this list.
+        for f in signals.columns:
+            if f not in row and f not in ("direction", "stop", "entry_ts", "signal_ts"):
+                row[f] = getattr(s, f, None)
         rows.append(row)
 
     out = pd.DataFrame(rows)

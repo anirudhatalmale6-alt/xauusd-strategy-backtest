@@ -1,0 +1,5 @@
+family,setups,trades,trades_per_year,meets_rate_gate,skipped_overlapping,regimes_seen
+f1_trend_pullback,1534,532,125.2,True,1002,6
+f2_momentum_breakout,834,568,133.7,True,266,9
+f3_level_rejection,1578,1328,312.5,True,250,9
+f4_mean_reversion,355,318,74.8,False,37,3
