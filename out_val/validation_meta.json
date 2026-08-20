@@ -1,0 +1,68 @@
+{
+  "warmup_start": "2015-01-01",
+  "validation": [
+    "2020-01-01",
+    "2022-12-31"
+  ],
+  "confirmation_period_untouched": [
+    "2023-01-01",
+    "2024-12-31"
+  ],
+  "risk_pct": 0.25,
+  "r_target": 2.0,
+  "min_cell_trades_for_a_decision": 30,
+  "params": {
+    "f1": {
+      "ema": 20,
+      "touch_atr": 0.1,
+      "swing_bars": 3,
+      "stop_atr": 0.5,
+      "no_chase_bars": 10
+    },
+    "f2": {
+      "channel": 20,
+      "range_mult": 1.5,
+      "stop_atr": 0.25,
+      "cooldown": 5
+    },
+    "f3": {
+      "max_pierce_atr": 1.5,
+      "stop_atr": 0.25,
+      "session_only": true
+    },
+    "f4": {
+      "ma": 20,
+      "sd": 2.5,
+      "rsi_n": 2,
+      "rsi_lo": 10.0,
+      "rsi_hi": 90.0,
+      "stop_atr": 0.5,
+      "hold_h1": 24
+    },
+    "stop_min_atr": 0.3,
+    "stop_max_atr": 4.0,
+    "confirm_fraction": 0.3333333333333333
+  },
+  "cost_scenarios": [
+    {
+      "label": "frictionless",
+      "spread_mult": 0.0,
+      "slippage_mult": 0.0
+    },
+    {
+      "label": "real_spread",
+      "spread_mult": 1.0,
+      "slippage_mult": 1.0
+    },
+    {
+      "label": "double_spread",
+      "spread_mult": 2.0,
+      "slippage_mult": 1.0
+    },
+    {
+      "label": "double_spread_double_slip",
+      "spread_mult": 2.0,
+      "slippage_mult": 2.0
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+family,session,trades,win_rate_pct,expectancy_R,net_pnl,profit_factor
+f1_trend_pullback,london,89,32.58,-0.0262,-48.86,0.966
+f1_trend_pullback,newyork,72,27.78,-0.1991,-350.23,0.721
+f1_trend_pullback,off,125,35.2,0.0272,58.21,1.029
+f1_trend_pullback,overlap,119,37.82,0.003,0.75,1.0
+f2_momentum_breakout,london,71,30.99,-0.0952,-163.96,0.867
+f2_momentum_breakout,newyork,38,42.11,0.1312,116.81,1.212
+f2_momentum_breakout,off,74,36.49,0.0953,173.27,1.149
+f2_momentum_breakout,overlap,224,33.93,-0.0878,-502.15,0.864
+f3_level_rejection,london,449,26.06,-0.2318,-2189.96,0.68
+f3_level_rejection,newyork,171,25.73,-0.2478,-925.82,0.641
+f3_level_rejection,overlap,391,32.48,-0.0336,-213.76,0.96
+f4_mean_reversion,london,70,25.71,-0.2362,-389.03,0.674
+f4_mean_reversion,newyork,24,16.67,-0.4981,-268.77,0.403
+f4_mean_reversion,off,26,19.23,-0.4192,-248.38,0.488
+f4_mean_reversion,overlap,152,25.0,-0.2384,-831.6,0.675

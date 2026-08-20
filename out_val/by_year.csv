@@ -1,0 +1,13 @@
+family,year,trades,win_rate_pct,expectancy_R,net_pnl,profit_factor
+f1_trend_pullback,2020,138,34.78,-0.0048,-24.66,0.989
+f1_trend_pullback,2021,115,26.09,-0.2768,-768.12,0.617
+f1_trend_pullback,2022,152,39.47,0.1289,452.65,1.207
+f2_momentum_breakout,2020,140,37.14,0.0386,127.62,1.058
+f2_momentum_breakout,2021,138,33.33,-0.0728,-258.94,0.889
+f2_momentum_breakout,2022,129,33.33,-0.0756,-244.71,0.884
+f3_level_rejection,2020,310,27.74,-0.1819,-1330.25,0.75
+f3_level_rejection,2021,340,27.06,-0.2004,-1372.14,0.722
+f3_level_rejection,2022,361,30.47,-0.0971,-627.15,0.86
+f4_mean_reversion,2020,100,20.0,-0.3524,-849.74,0.552
+f4_mean_reversion,2021,83,27.71,-0.2059,-387.91,0.711
+f4_mean_reversion,2022,89,24.72,-0.2617,-500.13,0.654

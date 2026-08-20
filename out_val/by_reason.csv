@@ -1,0 +1,12 @@
+family,reason,trades,win_rate_pct,expectancy_R,net_pnl,profit_factor
+f1_trend_pullback,stop,261,0.0,-1.0062,-6383.2,0.0
+f1_trend_pullback,target,117,100.0,2.0,5659.43,inf
+f1_trend_pullback,timeout,27,77.78,0.5819,383.64,17.249
+f2_momentum_breakout,stop,264,0.0,-1.0052,-6623.17,0.0
+f2_momentum_breakout,target,116,100.0,2.0,5771.17,inf
+f2_momentum_breakout,timeout,27,92.59,0.7029,475.97,26.345
+f3_level_rejection,stop,724,0.14,-1.0132,-14704.18,0.002
+f3_level_rejection,target,287,100.0,2.0,11374.64,inf
+f4_mean_reversion,stop,205,0.0,-1.0131,-4674.24,0.0
+f4_mean_reversion,target,49,100.0,2.2361,2430.63,inf
+f4_mean_reversion,timeout,18,88.89,1.2493,505.83,45.1

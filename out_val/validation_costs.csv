@@ -1,0 +1,17 @@
+family,scenario,trades,win_rate_pct,profit_factor,expectancy_R,exp_R_ci_low,exp_R_ci_high,prob_no_edge,net_return_pct,max_drawdown_pct
+f1_trend_pullback,frictionless,413,35.59,1.024,0.0176,-0.1147,0.1503,0.3954,1.59,-9.22
+f1_trend_pullback,real_spread,405,34.07,0.947,-0.0319,-0.1637,0.0984,0.6854,-3.4,-12.68
+f1_trend_pullback,double_spread,401,31.42,0.826,-0.1138,-0.2406,0.015,0.9563,-10.98,-16.8
+f1_trend_pullback,double_spread_double_slip,400,31.0,0.803,-0.131,-0.2591,-0.0007,0.9758,-12.47,-17.65
+f2_momentum_breakout,frictionless,408,37.5,1.085,0.0563,-0.0775,0.1918,0.2077,5.65,-4.41
+f2_momentum_breakout,real_spread,407,34.64,0.943,-0.0354,-0.167,0.0997,0.7016,-3.76,-7.52
+f2_momentum_breakout,double_spread,405,33.58,0.893,-0.0696,-0.1995,0.0646,0.8471,-7.02,-8.23
+f2_momentum_breakout,double_spread_double_slip,404,33.17,0.87,-0.0859,-0.2144,0.0467,0.8985,-8.52,-9.66
+f3_level_rejection,frictionless,1017,33.04,0.981,-0.0098,-0.0973,0.0787,0.5894,-3.08,-10.37
+f3_level_rejection,real_spread,1011,28.49,0.774,-0.1578,-0.2413,-0.0735,0.9999,-33.29,-36.02
+f3_level_rejection,double_spread,1013,24.78,0.636,-0.2689,-0.3474,-0.1878,1.0,-49.67,-51.73
+f3_level_rejection,double_spread_double_slip,1002,24.75,0.628,-0.2804,-0.3598,-0.1987,1.0,-50.74,-52.74
+f4_mean_reversion,frictionless,265,24.15,0.713,-0.2099,-0.3893,-0.0197,0.9837,-13.16,-13.17
+f4_mean_reversion,real_spread,272,23.9,0.629,-0.278,-0.4424,-0.1002,0.9989,-17.38,-17.38
+f4_mean_reversion,double_spread,275,22.55,0.538,-0.353,-0.5058,-0.1923,1.0,-21.68,-21.68
+f4_mean_reversion,double_spread_double_slip,275,22.55,0.522,-0.3698,-0.5213,-0.2107,1.0,-22.58,-22.58

@@ -1,0 +1,11 @@
+family,trendiness,trades,win_rate_pct,expectancy_R,net_pnl,profit_factor
+f1_trend_pullback,ranging,155,36.77,0.02,60.13,1.026
+f1_trend_pullback,transition,65,36.92,0.0415,63.99,1.064
+f1_trend_pullback,trending,185,30.81,-0.1011,-464.25,0.849
+f2_momentum_breakout,ranging,153,35.29,-0.0011,0.3,1.0
+f2_momentum_breakout,transition,86,34.88,-0.0438,-105.91,0.925
+f2_momentum_breakout,trending,168,33.93,-0.0623,-270.42,0.902
+f3_level_rejection,ranging,373,30.83,-0.0864,-718.96,0.862
+f3_level_rejection,transition,216,26.85,-0.206,-903.91,0.717
+f3_level_rejection,trending,422,27.25,-0.1963,-1706.67,0.73
+f4_mean_reversion,ranging,272,23.9,-0.278,-1737.78,0.629

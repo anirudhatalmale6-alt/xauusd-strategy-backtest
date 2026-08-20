@@ -1,0 +1,9 @@
+family,direction,trades,win_rate_pct,expectancy_R,net_pnl,profit_factor
+f1_trend_pullback,BUY,240,35.83,0.0153,67.97,1.018
+f1_trend_pullback,SELL,165,31.52,-0.1005,-408.1,0.848
+f2_momentum_breakout,BUY,214,34.58,-0.0446,-249.49,0.929
+f2_momentum_breakout,SELL,193,34.72,-0.0251,-126.54,0.96
+f3_level_rejection,BUY,538,29.74,-0.1189,-1413.42,0.818
+f3_level_rejection,SELL,473,27.06,-0.2021,-1916.12,0.725
+f4_mean_reversion,BUY,130,23.85,-0.3609,-1069.13,0.528
+f4_mean_reversion,SELL,142,23.94,-0.2022,-668.65,0.724

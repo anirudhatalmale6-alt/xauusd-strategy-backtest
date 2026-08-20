@@ -1,0 +1,5 @@
+family,setups,trades,trades_per_year,wins,losses,win_rate_pct,profit_factor,expectancy_R,exp_R_ci_low,exp_R_ci_high,prob_no_edge,net_return_pct,max_drawdown_pct,worst_losing_streak,best_winning_streak,avg_win_R,avg_loss_R,avg_bars_held,timeouts,skipped_overlapping,final_equity
+f1_trend_pullback,1226,405,135.1,138,267,34.07,0.947,-0.0319,-0.1637,0.0984,0.6854,-3.4,-12.68,12,5,1.817,-0.987,125.4,27,821,9659.88
+f2_momentum_breakout,579,407,135.8,141,266,34.64,0.943,-0.0354,-0.167,0.0997,0.7016,-3.76,-7.52,17,5,1.785,-1.0,149.5,27,172,9623.99
+f3_level_rejection,1216,1011,337.2,288,723,28.49,0.774,-0.1578,-0.2413,-0.0735,0.9999,-33.29,-36.02,17,5,1.997,-1.016,12.8,0,205,6670.6
+f4_mean_reversion,308,272,90.7,65,207,23.9,0.629,-0.278,-0.4424,-0.1002,0.9989,-17.38,-17.38,16,3,2.039,-1.006,48.8,18,36,8262.21
